@@ -1,2 +1,3 @@
 # Make-progress-every-day
-学习并总结
+每天学习一个知识点，进步一点点
+
