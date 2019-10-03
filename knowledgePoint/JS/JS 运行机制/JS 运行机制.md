@@ -54,7 +54,7 @@ setTimeout(function () {
 >警告：在严格模式下，第5版 ECMAScript (ES5) 禁止使用 arguments.callee()。当一个函数必须调用自身的时候, 避免使用 arguments.callee(), 通过要么给函数表达式一个名字,要么使用一个函数声明.
 #### 宏任务与微任务
 
- （原文链接：https://blog.csdn.net/u014168594/article/details/83510281）
+ （原文链接：https://blog.csdn.net/u014168594/article/details/83510281 ）
  
 浏览器为了能够使得 JS 内部 task（任务） 与 DOM 任务能够有序的执行，会在一个 task 执行结束后，在下一个 task 执行开始前，对页面进行重新渲染 （task-> 渲染-> task->…)
 * 宏任务（task）：就是上述的 JS 内部（任务队列里）的任务，严格按照时间顺序压栈和执行。如 setTimeOut、setInverter、setImmediate 、 MessageChannel等
