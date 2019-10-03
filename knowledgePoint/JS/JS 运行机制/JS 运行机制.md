@@ -52,3 +52,74 @@ setTimeout(function () {
 }, interval)
 ```
 >警告：在严格模式下，第5版 ECMAScript (ES5) 禁止使用 arguments.callee()。当一个函数必须调用自身的时候, 避免使用 arguments.callee(), 通过要么给函数表达式一个名字,要么使用一个函数声明.
+#### 宏任务与微任务
+
+ （原文链接：https://blog.csdn.net/u014168594/article/details/83510281）
+ 
+浏览器为了能够使得 JS 内部 task（任务） 与 DOM 任务能够有序的执行，会在一个 task 执行结束后，在下一个 task 执行开始前，对页面进行重新渲染 （task-> 渲染-> task->…)
+* 宏任务（task）：就是上述的 JS 内部（任务队列里）的任务，严格按照时间顺序压栈和执行。如 setTimeOut、setInverter、setImmediate 、 MessageChannel等
+* 微任务（Microtask ）：通常来说就是需要在当前 task 执行结束后立即执行的任务，例如需要对一系列的任务做出回应，或者是需要异步的执行任务而又不需要分配一个新的 task，这样便可以减小一点性能的开销。microtask 队列是一个与 task 队列相互独立的队列，microtask 将会在每一个 task 执行结束之后执行。每一个 task 中产生的 microtask 都将会添加到 microtask 队列中，将会添加至当前 microtask 队列的尾部，并且 microtask 会按序的处理完队列中的所有任务，然后开始执行下一个 task 。microtask 类型的任务目前包括了 MutationObserver 以及 Promise 的回调函数。
+例子：
+``` 
+console.log("script start");
+Promise.resolve().then(function(){
+	console.log("promise1")
+})
+setTimeout(function(){
+    console.log("setTimeout")
+},0);
+Promise.resolve().then(function(){
+	console.log("promise2")
+})
+console.log("script end");
+
+//输出
+//script start
+//script end
+//promise1
+//promise2
+//setTimeout
+```
+![Alt text](./1570106840823.png)
+
+``` 
+console.log('script start');
+Promise.resolve().then(function() {
+  	setTimeout(function() {
+      console.log('setTimeout1');
+    }, 0);
+}).then(function() {
+  console.log('promise1');
+});
+
+setTimeout(function() {
+	console.log('setTimeout2')
+	Promise.resolve().then(function(){
+		console.log('promise2');
+	})
+},0)
+console.log('script end');
+
+//输出：
+//script start
+//script end
+//promise1
+//setTimeout2
+//promise2
+//setTimeout1
+```
+（1）进入宏任务，执行当前代码，输出 script start
+
+（2）执行 Promise.resolve(1)，回调（内含函数 setTimeout(1)）进入微任务
+
+（3）执行 setTimeout(2)，异步任务先挂起，回调（内含函数 Promise.resolve(2)） 进入下一宏任务
+
+（4）输出 script end，当前宏任务结束。
+
+（5）宏任务结束，查看微任务队列，当前微任务是 Promise.resolve(1) 回调，执行回调里面的 setTimeout(1)，异步任务先挂起，接着输出 promise1，当前微任务为空
+
+（6）当前微任务为空，执行下一宏任务。
+（7）setTimeout(2) 时间到了，加入宏任务队列中，setTimeout(1) 时间到了，加入宏任务队列中
+（8）当前宏任务是 setTimeout(2)回调，输出 setTimeout2，执行回调里面的 Promise.resolve(2)，回调进入微任务，当前宏任务结束
+（9）当前宏任务结束，执行微任务。输出 Promise2，微任务为空。
+（10）执行下一宏任务，setTimeout1 回调输出 setTimeout1
