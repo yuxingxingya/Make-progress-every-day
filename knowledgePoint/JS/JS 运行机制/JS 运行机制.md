@@ -119,7 +119,12 @@ console.log('script end');
 （5）宏任务结束，查看微任务队列，当前微任务是 Promise.resolve(1) 回调，执行回调里面的 setTimeout(1)，异步任务先挂起，接着输出 promise1，当前微任务为空
 
 （6）当前微任务为空，执行下一宏任务。
+
 （7）setTimeout(2) 时间到了，加入宏任务队列中，setTimeout(1) 时间到了，加入宏任务队列中
+
 （8）当前宏任务是 setTimeout(2)回调，输出 setTimeout2，执行回调里面的 Promise.resolve(2)，回调进入微任务，当前宏任务结束
+
 （9）当前宏任务结束，执行微任务。输出 Promise2，微任务为空。
+
 （10）执行下一宏任务，setTimeout1 回调输出 setTimeout1
+
