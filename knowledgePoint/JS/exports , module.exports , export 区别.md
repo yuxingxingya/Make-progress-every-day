@@ -2,7 +2,7 @@
 > 注：这是面试字节跳动的一个笔试题。
 
 首先要先了解两个规范：
-* CommonJS模块规范
+* CommonJS模块规范( http://javascript.ruanyifeng.com/nodejs/module.html )
 > 根据这个规范，每个文件就是一个模块，有自己的作用域。在一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见。
 > CommonJS规范规定，每个模块内部，module变量代表当前模块。这个变量是一个对象，它的exports属性（即module.exports）是对外的接口。加载某个模块，其实是加载该模块的module.exports属性。
 > require方法用于加载模块。
@@ -22,7 +22,16 @@ var addX = function (value) {
 module.exports.x = x;
 module.exports.addX = addX;
 
-// 另外b.js文件中引用
+// b.js
+exports.area = function (r) {
+  return Math.PI * r * r;
+};
+
+exports.circumference = function (r) {
+  return 2 * Math.PI * r;
+};
+
+// 另外c.js文件中引用
 var example = require('./a.js');
 console.log(example.x); // 5
 console.log(example.addX(1)); // 6
