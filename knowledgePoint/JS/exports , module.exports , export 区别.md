@@ -1,5 +1,5 @@
-###exports , module.exports , export 区别
-注：这是面试字节跳动的一个笔试题。
+### exports , module.exports , export 区别
+> 注：这是面试字节跳动的一个笔试题。
 
 首先要先了解两个规范：
 * CommonJS模块规范
