@@ -6,6 +6,9 @@
 
 [2、JS运行机制（EvenLoop 事件循环机制）](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6/JS%20%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.md)
 
+[3、exports , module.exports , export 区别）]()
+
+
 ### 实际运用知识点
 [1、移动web适配](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/%E7%A7%BB%E5%8A%A8%E7%AB%AFweb%E9%80%82%E9%85%8D.md)
 
