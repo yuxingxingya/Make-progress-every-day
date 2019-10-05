@@ -8,6 +8,10 @@
 
 [3、exports , module.exports , export 区别 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/exports%20,%20module.exports%20,%20export%20%E5%8C%BA%E5%88%AB.md)
 
+[4、关于异步 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%BC%82%E6%AD%A5.md)
+
+
+
 
 ### 实际运用知识点
 [1、移动web适配](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/%E7%A7%BB%E5%8A%A8%E7%AB%AFweb%E9%80%82%E9%85%8D.md)
