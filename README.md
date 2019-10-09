@@ -12,6 +12,9 @@
 
 [5、对象与继承 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF.md)
 
+[6、Arguments 对象](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/Arguments%20%E5%AF%B9%E8%B1%A1.md)
+
+
 
 
 ### 实际运用知识点
