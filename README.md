@@ -30,3 +30,6 @@
 ### CSS知识点
 
 [1、CSS知识点汇总 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/CSS%E7%9F%A5%E8%AF%86%E7%82%B9.md)
+
+[2、display:none、visibility:hidden和opacity:0之间的区别 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/display_none%E3%80%81visibility_hidden%E5%92%8Copacity_0%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+
