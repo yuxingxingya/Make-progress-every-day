@@ -33,3 +33,9 @@
 
 [2、display:none、visibility:hidden和opacity:0之间的区别 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/display_none%E3%80%81visibility_hidden%E5%92%8Copacity_0%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
+### 算法
+
+[1、快速排序 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/%E7%AE%97%E6%B3%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.md)
+
+
+
