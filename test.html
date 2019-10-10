@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+
+    .content {
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        background: aquamarine;
+    }
+
+    .c,
+    .b,
+    .a {
+        border: 1px solid #000;
+    }
+
+    .c {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+    .b {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .a {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #header{
+        width: 100%;
+        height: 80px;
+        background: #0b8b7c;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #footer{
+        width: 100%;
+        height: 80px;
+        background: #0b8b7c;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    #wrapper{
+        display: flex;
+    }
+    #aside{
+        width: 200px;
+        background: red;
+        padding: 80px 0;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    #content{
+        flex: 1;
+        background: #EFA;
+        height: 100vh;
+        padding: 80px 0;
+        margin-left: 10px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+<!--<div class="content"></div>-->
+<!--<div class="c">-->
+    <!--<div class="b">-->
+        <!--<div class="a"></div>-->
+    <!--</div>-->
+<!--</div>-->
+<header id="header">header --- height=80px</header>
+<div id="wrapper">
+    <aside id="aside">侧边栏 --- 200px--- 高度撑开自适应</aside>
+    <section id="content">内容 -自适应 --- 高度撑开自适应</section>
+</div>
+<footer id="footer">footer --- height=80px</footer>
+<script>
+
+    //    var val = 'c';
+    //    var str = 'Value is' + (val === 'c') ? 'a' : 'b';
+    //    console.log(str);
+
+    // for (var i = 0; i< 10; i++){
+    //     (function (j) {
+    //         setTimeout(() => {
+    //             console.log(j);
+    //         }, 100)
+    //
+    //     })(i)
+    //
+    // }
+    // for (let i = 0; i< 10; i++){
+    //     setTimeout(() => {
+    //         console.log(i);
+    //     }, 1000)
+    // }
+
+    // var con = function (i) {
+    //     setTimeout(() => {
+    //         console.log(i);
+    //     }, 100)
+    // };
+    // for (var i = 0; i< 10; i++){
+    //     con(i);
+    // }
+    class Animal {
+        constructor(name) {
+            this.name = name;
+        }
+    }
+    class Cat extends Animal{
+        constructor(name){
+            super(name);
+        }
+        say(){
+            return "Hello,"+ this.name +"!"
+        }
+    }
+    let cat = new Cat("英短");
+    console.log(cat.say())
+
+</script>
+</body>
+</html>
