@@ -14,7 +14,7 @@
 
 [6、Arguments 对象](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/Arguments%20%E5%AF%B9%E8%B1%A1.md)
 
-
+[7、call与apply与bind区别](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/call%E4%B8%8Eapply%E4%B8%8Ebind%E5%8C%BA%E5%88%AB.md)
 
 
 ### 实际运用知识点
