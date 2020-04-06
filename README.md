@@ -35,6 +35,7 @@
 
 [3、页面布局设置 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1.md)
 
+[4、页面布局-水平垂直居中 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1.md)
 
 
 ### 算法
