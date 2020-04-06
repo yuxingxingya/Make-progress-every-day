@@ -16,6 +16,7 @@
 
 [7、call与apply与bind区别](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/call%E4%B8%8Eapply%E4%B8%8Ebind%E5%8C%BA%E5%88%AB.md)
 
+[8、JS 事件](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E4%BA%8B%E4%BB%B6.md)
 
 ### 实际运用知识点
 [1、移动web适配](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E7%A7%BB%E5%8A%A8%E7%AB%AFweb%E9%80%82%E9%85%8D.md)
