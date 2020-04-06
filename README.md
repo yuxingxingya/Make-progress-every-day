@@ -18,9 +18,9 @@
 
 
 ### 实际运用知识点
-[1、移动web适配](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/%E7%A7%BB%E5%8A%A8%E7%AB%AFweb%E9%80%82%E9%85%8D.md)
+[1、移动web适配](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E7%A7%BB%E5%8A%A8%E7%AB%AFweb%E9%80%82%E9%85%8D.md)
 
-[2、如何自动识别判断浏览器是PC端还是移动端自动跳转对应的地址页面](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B1%9E%E6%80%A7.md)
+[2、如何自动识别判断浏览器是PC端还是移动端自动跳转对应的地址页面](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B1%9E%E6%80%A7.md)
 
 [3、从URL输入到页面展现到底发生什么？](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E4%BB%8EURL%E8%BE%93%E5%85%A5%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0%E5%88%B0%E5%BA%95%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F/%E4%BB%8EURL%E8%BE%93%E5%85%A5%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0%E5%88%B0%E5%BA%95%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F.md)
 
@@ -35,7 +35,7 @@
 
 [3、页面布局设置 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1.md)
 
-[4、页面布局-水平垂直居中 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1.md)
+[4、页面布局-水平垂直居中 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/CSS/%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1/%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80-%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.md)
 
 
 ### 算法
