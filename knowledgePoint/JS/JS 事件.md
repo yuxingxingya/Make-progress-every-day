@@ -3,10 +3,10 @@
 DOM2级事件流包括3个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段；（IE8之前不支持DOM事件流）
  * 捕获：window -> document -> html ->body -> ... -> 目标元素
  * 冒泡：相反
-##### 取消默认事件
+##### 取消事件冒泡
 *  IE中: e.cancelBubble：true; 
 *  DOM中：e.stopPropagation()方法
-##### 取消事件冒泡
+##### 取消默认事件
 * IE中：事件函数中 return false
 * DOM中：e.preventDefault()方法
 ####  二、事件处理程序

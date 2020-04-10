@@ -47,7 +47,7 @@ console.log(o3 instanceof Object) // true
 ``` javascript
 // ES5 
 function Animal(name){
-	this.name = name
+	this.name = name；
 }
 // ES6 
 class Animal2
@@ -78,7 +78,7 @@ var cat = new Animal2("cat");
 ``` javascript
 // ES5 
 function Animal(name){
-	this.name = name
+	this.name = name；
 }
 // 构造函数继承
 function Dog(){
