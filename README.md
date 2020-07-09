@@ -29,6 +29,7 @@
 
 [3、从URL输入到页面展现到底发生什么？](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E4%BB%8EURL%E8%BE%93%E5%85%A5%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0%E5%88%B0%E5%BA%95%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F/%E4%BB%8EURL%E8%BE%93%E5%85%A5%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0%E5%88%B0%E5%BA%95%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F.md)
 
+[4、节流与防抖](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96.md)
 ### React
 [1、setState是同步还是异步](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/react/%E5%85%B3%E4%BA%8EsetState%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5%E9%97%AE%E9%A2%98.md)
 
