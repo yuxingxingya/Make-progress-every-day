@@ -32,6 +32,8 @@
 [4、节流与防抖](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96.md)
 
 [5、Set、Map、WeakSet 和 WeakMap 的区别](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/Set%E3%80%81Map%E3%80%81WeakSet%20%E5%92%8C%20WeakMap%20%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+
+[6、深度优先与广度优先遍历](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E4%B8%8E%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E4%B8%8E%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86.md)
 ### React
 [1、setState是同步还是异步](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/react/%E5%85%B3%E4%BA%8EsetState%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5%E9%97%AE%E9%A2%98.md)
 
