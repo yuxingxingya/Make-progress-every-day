@@ -128,3 +128,41 @@ console.log('script end');
 
 （10）执行下一宏任务，setTimeout1 回调输出 setTimeout1
 
+#### Promise
+Promise本身是**同步的立即执行函数**， 当在executor中执行resolve或者reject的时候, 此时是异步操作， 会先执行then/catch等，当主栈完成后，才会去调用resolve/reject中存放的方法执行，打印p的时候，是打印的返回结果，一个Promise实例。
+```
+console.log('script start')
+let promise1 = new Promise(function (resolve) {
+    console.log('promise1')
+    resolve()
+    console.log('promise1 end')
+}).then(function () {
+    console.log('promise2')
+})
+setTimeout(function(){
+    console.log('settimeout')
+})
+console.log('script end')
+// 输出顺序: script start->promise1->promise1 end->script end->promise2->settimeout
+```
+
+
+#### async/await
+```
+async function async1(){
+   console.log('async1 start');
+    await async2();
+    console.log('async1 end')
+}
+async function async2(){
+    console.log('async2')
+}
+
+console.log('script start');
+async1();
+console.log('script end')
+
+// 输出顺序：script start->async1 start->async2->script end->async1 end
+```
+* async 函数返回的 Promise 对象，**必须等到内部所有await命令后面的 Promise 对象执行完，才会发生状态改变**，除非遇到return语句或者抛出错误。也就是说，只有async函数内部的异步操作执行完，才会执行then方法指定的回调函数。
+* async 函数返回一个 Promise 对象，当函数执行的时候，一旦遇到await就会先返回，等到异步操作完成，再接着执行函数体内后面的语句。可以理解为，是让出了线程，跳出了 async 函数体。
