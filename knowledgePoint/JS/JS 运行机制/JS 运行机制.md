@@ -128,6 +128,25 @@ console.log('script end');
 
 （10）执行下一宏任务，setTimeout1 回调输出 setTimeout1
 
+#### Promise
+Promise本身是**同步的立即执行函数**， 当在executor中执行resolve或者reject的时候, 此时是异步操作， 会先执行then/catch等，当主栈完成后，才会去调用resolve/reject中存放的方法执行，打印p的时候，是打印的返回结果，一个Promise实例。
+```
+console.log('script start')
+let promise1 = new Promise(function (resolve) {
+    console.log('promise1')
+    resolve()
+    console.log('promise1 end')
+}).then(function () {
+    console.log('promise2')
+})
+setTimeout(function(){
+    console.log('settimeout')
+})
+console.log('script end')
+// 输出顺序: script start->promise1->promise1 end->script end->promise2->settimeout
+```
+
+
 #### async/await
 ```
 async function async1(){
