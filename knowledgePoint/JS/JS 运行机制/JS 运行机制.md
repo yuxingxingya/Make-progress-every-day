@@ -166,6 +166,7 @@ console.log('script end')
 ```
 * async 函数返回的 Promise 对象，**必须等到内部所有await命令后面的 Promise 对象执行完，才会发生状态改变**，除非遇到return语句或者抛出错误。也就是说，只有async函数内部的异步操作执行完，才会执行then方法指定的回调函数。
 * async 函数返回一个 Promise 对象，当函数执行的时候，一旦遇到await就会先返回，等到异步操作完成，再接着执行函数体内后面的语句。可以理解为，是让出了线程，跳出了 async 函数体。
+* async 函数完全可以看作多个异步操作，包装成的一个 Promise 对象，而**await命令就是内部then命令的语法糖**。
 
 ```
     async function async1 () {
@@ -174,8 +175,8 @@ console.log('script end')
         console.log("Promise异步async1")
         setTimeout(() => {
           console.log("setTimeout中async1")
+          res()
         }, 50)
-        res()
       }).then(res => {
         console.log("Promise异步返回async1")
       })
@@ -184,42 +185,45 @@ console.log('script end')
     }
     async function async2 () {
       console.log('async2')
-      setTimeout(() => {
-        console.log("setTimeout中async2")
-      }, 50)
       return new Promise((res, rej) => {
         console.log("Promise异步async2")
-        res()
+        setTimeout(() => {
+          console.log("setTimeout中async2")
+          res()
+        }, 50)
       })
     }
     async function async3 () {
       console.log('async3')
-      setTimeout(() => {
-        console.log("setTimeout中async3")
-      }, 50)
       return new Promise((res, rej) => {
         console.log("Promise异步async3")
-        res()
+        setTimeout(() => {
+          console.log("setTimeout中async3")
+          res()
+        }, 50)
+
       })
     }
     console.log('script start');
     async1();
-    console.log('script end')
+    console.log('script next')
     async2().then(res => { console.log("Promise异步返回async2") })
+    console.log('script end')
 
 // script start
 // async1 start
 // Promise异步async1
-// script end
+// script next
 // async2
 // Promise异步async2
+// script end
+// setTimeout中async1
 // Promise异步返回async1
 // async3
 // Promise异步async3
+// setTimeout中async2
 // Promise异步返回async2
+// setTimeout中async3
 // Promise异步返回async3
 // async1 end
-// setTimeout中async1
-// setTimeout中async2
-// setTimeout中async3
 ```
