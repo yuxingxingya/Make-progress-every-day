@@ -227,7 +227,7 @@ console.log('script end')
 // Promise异步返回async3
 // async1 end
 ```
-#####（头条）异步笔试题
+####（头条）异步笔试题
 ```
 async function async1() {
     console.log('async1 start');
