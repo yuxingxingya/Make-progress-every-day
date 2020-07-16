@@ -8,7 +8,7 @@
 
 [3、exports , module.exports , export 区别 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/exports%20,%20module.exports%20,%20export%20%E5%8C%BA%E5%88%AB.md)
 
-[4、异步---Promise 与 async ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%BC%82%E6%AD%A5.md)
+[4、异步解决方案及详细介绍 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%BC%82%E6%AD%A5.md)
 
 [5、对象与继承 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF.md)
 
