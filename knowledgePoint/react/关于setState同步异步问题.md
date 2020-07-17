@@ -50,6 +50,8 @@ class Example extends React.Component {
     this.setState((state, props) => {
         console.log(state.val);     // 1
         return { val: state.val + 1 }
+    },()=>{
+        console.log(this.state.val);    // 2
     });
         
     setTimeout(() => {
