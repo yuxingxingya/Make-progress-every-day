@@ -5,7 +5,7 @@
 #### setState 何时是异步的何时是同步的？
 setState 只在 **合成事件** 和 **钩子函数** 中是 **“异步”** 的，在 **原生事件** 和 **setTimeout** 中都是 **同步** 的。
 
-> * setState的“异步”并不是说内部由异步代码实现，其实本身执行的过程和代码都是同步的，只是合成事件和钩子函数的调用顺序在更新之前，导致在合成事件和钩子函数中没法立马拿到更新后的值，形式了所谓的“异步”，当然可以通过第二个参数 setState(partialState, callback) 中的callback拿到更新后的结果。
+> * setState的“异步”并不是说内部由异步代码实现，其实**本身执行的过程和代码都是同步的**，只是合成事件和钩子函数的调用顺序在更新之前，导致在合成事件和钩子函数中没法立马拿到更新后的值，形式了所谓的“异步”，当然可以通过第二个参数 setState(partialState, callback) 中的callback拿到更新后的结果。
 > * setState 的批量更新优化也是建立在“异步”（合成事件、钩子函数）之上的，在原生事件和setTimeout 中不会批量更新，在“异步”中如果对同一个值进行多次 setState ， setState 的批量更新策略会对其进行覆盖，取最后一次的执行，如果是同时 setState 多个不同的值，在更新时会对其进行合并批量更新。
 > * 链接：https://juejin.im/post/5b45c57c51882519790c7441
 
@@ -30,3 +30,39 @@ this.setState((state, props) => ({
 ```
 #### 给 setState 传递一个对象与传递一个函数的区别是什么？
 传递一个函数可以让你在函数内访问到当前的 state 的值。因为 setState 的调用是 **分批** 的，所以你可以链式地进行更新，并确保它们是一个建立在另一个之上的，这样才不会发生冲突。
+
+```javascript
+class Example extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      val: 0
+    };
+  }
+  
+  componentDidMount() {
+    this.setState({val: this.state.val + 1});
+    console.log(this.state.val);    // 0
+
+    this.setState({val: this.state.val + 1});
+    console.log(this.state.val);    // 0
+
+    this.setState((state, props) => {
+        console.log(state.val);     // 1
+        return { val: state.val + 1 }
+    });
+        
+    setTimeout(() => {
+      this.setState({val: this.state.val + 1});
+      console.log(this.state.val);  // 3
+
+      this.setState({val: this.state.val + 1});
+      console.log(this.state.val);  // 4
+    }, 0);
+  }
+
+  render() {
+    return null;
+  }
+};
+```
