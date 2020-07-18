@@ -45,7 +45,7 @@
 当T1 执行完，就会接着执行T2消息。` --->间隔时间会缩短`
 > PS: setInterval()仅当任务队列中没有该定时器的任何消息，才会将定时器的消息添加进任务队列中。
 ####  链式setTimeout
-``` 
+``` javascript
 setTimeout(function () {
     // 任务
     setTimeout(arguments.callee, interval);
@@ -60,7 +60,7 @@ setTimeout(function () {
 * 宏任务（task）：就是上述的 JS 内部（任务队列里）的任务，严格按照时间顺序压栈和执行。如 setTimeOut、setInverter、setImmediate 、 MessageChannel等
 * 微任务（Microtask ）：通常来说就是需要在当前 task 执行结束后立即执行的任务，例如需要对一系列的任务做出回应，或者是需要异步的执行任务而又不需要分配一个新的 task，这样便可以减小一点性能的开销。microtask 队列是一个与 task 队列相互独立的队列，microtask 将会在每一个 task 执行结束之后执行。每一个 task 中产生的 microtask 都将会添加到 microtask 队列中，将会添加至当前 microtask 队列的尾部，并且 microtask 会按序的处理完队列中的所有任务，然后开始执行下一个 task 。microtask 类型的任务目前包括了 MutationObserver 以及 Promise 的回调函数。
 例子：
-``` 
+``` javascript
 console.log("script start");
 Promise.resolve().then(function(){
 	console.log("promise1")
@@ -82,7 +82,7 @@ console.log("script end");
 ```
 ![Alt text](./1570106840823.png)
 
-``` 
+``` javascript
 console.log('script start');
 Promise.resolve().then(function() {
   	setTimeout(function() {
@@ -130,7 +130,7 @@ console.log('script end');
 
 #### Promise
 Promise本身是**同步的立即执行函数**， 当在executor中执行resolve或者reject的时候, 此时是异步操作， 会先执行then/catch等，当主栈完成后，才会去调用resolve/reject中存放的方法执行，打印p的时候，是打印的返回结果，一个Promise实例。
-```
+```javascript
 console.log('script start')
 let promise1 = new Promise(function (resolve) {
     console.log('promise1')
@@ -148,7 +148,7 @@ console.log('script end')
 
 
 #### async/await
-```
+```javascript
 async function async1(){
    console.log('async1 start');
     await async2();
@@ -168,7 +168,7 @@ console.log('script end')
 * async 函数返回一个 Promise 对象，当函数执行的时候，一旦遇到await就会先返回，等到异步操作完成，再接着执行函数体内后面的语句。可以理解为，是让出了线程，跳出了 async 函数体。
 * async 函数完全可以看作多个异步操作，包装成的一个 Promise 对象，而**await命令就是内部then命令的语法糖**。
 
-```
+```javascript
     async function async1 () {
       console.log('async1 start');
       await new Promise((res, rej) => {
@@ -228,7 +228,7 @@ console.log('script end')
 // async1 end
 ```
 ##### 异步笔试题（头条）
-```
+```javascript
 async function async1() {
     console.log('async1 start');
     await async2();
