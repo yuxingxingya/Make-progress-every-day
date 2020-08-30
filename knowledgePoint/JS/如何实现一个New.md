@@ -1,4 +1,4 @@
-##如何实现一个New
+## 如何实现一个New
 
 1、要创建一个对象的新实例，必须使用 new 操作符。以这种方式调用构造函数实际上会经历以下 4个步骤：
 (1) 创建一个新对象；
@@ -12,7 +12,9 @@ function _new(fn, ...arg) {
     return ret instanceof Object ? ret : obj;
 }
 ```
-使用apply来链接一个对象构造器
+
+## 使用apply来链接一个对象构造器
+
 ```javascript
 Function.prototype.construct = function (aArgs) {
   var oNew = Object.create(this.prototype);
