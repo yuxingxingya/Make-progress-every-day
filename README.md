@@ -19,6 +19,7 @@
 [8、JS 事件](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E4%BA%8B%E4%BB%B6.md)
 
 [9、JS 对象、原型链、继承](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E5%AF%B9%E8%B1%A1%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF/JS%20%E5%AF%B9%E8%B1%A1%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF.md)
+[10、判断数组方法Object.prototype.toString.call() 、 instanceof 以及 Array.isArray()](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95Object.prototype.toString.call()%20%E3%80%81%20instanceof%20%E4%BB%A5%E5%8F%8A%20Array.isArray().md)
 
 [10、JS 预编译](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E9%A2%84%E7%BC%96%E8%AF%91/JS%20%E9%A2%84%E7%BC%96%E8%AF%91.md)
 
