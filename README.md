@@ -20,7 +20,9 @@
 
 [9、JS 对象、原型链、继承](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E5%AF%B9%E8%B1%A1%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF/JS%20%E5%AF%B9%E8%B1%A1%E3%80%81%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81%E7%BB%A7%E6%89%BF.md)
 
-[10、JS 预编译](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E9%A2%84%E7%BC%96%E8%AF%91/JS%20%E9%A2%84%E7%BC%96%E8%AF%91.md)
+[10、判断数组方法Object.prototype.toString.call() 、 instanceof 以及 Array.isArray()](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95Object.prototype.toString.call()%20%E3%80%81%20instanceof%20%E4%BB%A5%E5%8F%8A%20Array.isArray().md)
+
+[11、JS 预编译](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E9%A2%84%E7%BC%96%E8%AF%91/JS%20%E9%A2%84%E7%BC%96%E8%AF%91.md)
 
 ### 实际运用知识点
 [1、移动web适配](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E7%A7%BB%E5%8A%A8%E7%AB%AFweb%E9%80%82%E9%85%8D.md)
@@ -41,7 +43,7 @@
 
 [9、HTTP1.0、HTTP1.1、HTTP2、SPDY](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/HTTP1.0%E3%80%81HTTP1.1%E3%80%81HTTPS%E3%80%81SPDY%E3%80%81HTTP2/HTTP1.0%E3%80%81HTTP1.1%E3%80%81HTTPS%E3%80%81SPDY%E3%80%81HTTP2.md)
 
-[9、TCP 三次握手和四次挥手 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/TCP%20%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/TCP%20%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B.md)
+[10、TCP 三次握手和四次挥手 ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/TCP%20%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B/TCP%20%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B.md)
 ### React
 [1、setState是同步还是异步](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/react/%E5%85%B3%E4%BA%8EsetState%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5%E9%97%AE%E9%A2%98.md)
 
