@@ -24,6 +24,8 @@
 
 [11、JS 预编译](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/JS%20%E9%A2%84%E7%BC%96%E8%AF%91/JS%20%E9%A2%84%E7%BC%96%E8%AF%91.md)
 
+[12、如何实现一个New ](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/JS/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AANew.md)
+
 ### 实际运用知识点
 [1、移动web适配](https://github.com/Heroine-z/Make-progress-every-day/blob/master/knowledgePoint/application/%E7%A7%BB%E5%8A%A8%E7%AB%AFweb%E9%80%82%E9%85%8D.md)
 
