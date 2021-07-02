@@ -32,3 +32,16 @@ bind()方法**创建一个新的函数**，在bind()被调用时，这个新函�
 ```
 function.bind(thisArg[, arg1[, arg2[, ...]]])
 ```
+
+如果我们将null或者是undefined作为this的绑定对象传入call、apply或者是bind,这些值在调用时会被忽略，实际应用的是默认绑定规则。
+
+```
+var foo = {
+    name: 'Selina'
+}
+var name = 'Chirs';
+function bar() {
+    console.log(this.name);
+}
+bar.call(null); //Chirs 
+```
