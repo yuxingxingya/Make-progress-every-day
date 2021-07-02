@@ -1,4 +1,5 @@
 ## call与apply与bind区别
+call和apply都会执行对应的函数，而bind方法不会。
 ### apply
 apply() 方法调用一个具有给定this值的函数，以及作为一个数组（或类似数组对象）提供的参数。
 
